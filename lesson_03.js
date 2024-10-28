@@ -34,7 +34,8 @@ function power(x, y) {
   if ((isNumber(x) == true) && (isNumber(y) == true)) {
     if (y === 0) return 1;
     else return x * power(x, y - 1);
-  } else return msg;
+  }
+  else return msg;
 };
 
 console.log("Power: " + power(2, 5)); // Expected result: 32
@@ -47,7 +48,8 @@ function factorial(n) {
   if (isNumber(n) == true) {
     if ((n === 0) || (n === 1)) return 1;
     else return n * factorial(n - 1);
-  } else return msg;
+  }
+  else return msg;
 };
 
 console.log("Factorial: " + factorial(6)); // Expected result: 720
@@ -60,9 +62,7 @@ console.log("Factorial: " + factorial(6)); // Expected result: 720
 function fibonacci(n) {
   if (n === 0) return 0;
   if (n === 1) return 1;
-  else {
-    return fibonacci(n - 1) + fibonacci(n - 2); // cosorro
-  };
+  else return fibonacci(n - 1) + fibonacci(n - 2); // cosorro
 };
 
 function printFibonacci(n, current_n = 0) {
@@ -72,7 +72,8 @@ function printFibonacci(n, current_n = 0) {
       console.log("Fibonacci (Iteration No. " + current_n + "): " + fibonacci(current_n));
       printFibonacci(n, current_n + 1);
     };
-  } else return msg;
+  }
+  else return msg;
 };
 
 // Expected result: 0… 1… 2… 3… 5… 8… 13… 21… 34… 55… 89… 144…
