@@ -22,11 +22,8 @@
 const msg = "What kind of thing are you tryng to put in the function? You, monster..."
 
 function isNumber(input) {
-  if (typeof (input) !== "number") {
-    return false
-  } else {
-    return true
-  }
+  if (typeof (input) !== "number") return false
+  else return true
 };
 
 

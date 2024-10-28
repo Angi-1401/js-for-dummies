@@ -26,21 +26,13 @@ if (!array.includes(operator)) {
   return;
 }
 
-if (operator == "+") {
-  console.log("Calculator (Sum): " + (x + y));
-} else if (operator == "-") {
-  console.log("Calculator (Sust.): " + (x - y));
-} else if (operator == "*") {
-  console.log("Calculator (Mult.): " + (x * y));
-} else if ((operator == "/") && (y == 0)) {
-  result = "Calculator (Div.): Impossible."
-} else if (operator == "/") {
-  console.log("Calculator (Div.): " + (x + y));
-} else if (operator == "**") {
-  console.log("Calculator (Power): " + (x + y));
-} else if (operator == "%") {
-  console.log("Calculator (Res.): " + (x + y));
-};
+if (operator == "+") console.log("Calculator (Sum): " + (x + y));
+else if (operator == "-") console.log("Calculator (Sust.): " + (x - y));
+else if (operator == "*") console.log("Calculator (Mult.): " + (x * y));
+else if ((operator == "/") && (y == 0)) console.log("Calculator (Div.): Impossible.");
+else if (operator == "/") console.log("Calculator (Div.): " + (x + y));
+else if (operator == "**") console.log("Calculator (Power): " + (x + y));
+else if (operator == "%") console.log("Calculator (Res.): " + (x + y));
 
 
 /**
@@ -53,9 +45,7 @@ if (typeof n !== "number") {
   return;
 }
 
-if (n < 1 || n > 7) {
-  console.log("Seems like the numbers stored in n doesn't correspond with any weekday.")
-};
+if (n < 1 || n > 7) console.log("Seems like the numbers stored in n doesn't correspond with any weekday.");
 
 const dict = {
   1: "Monday",
